@@ -1,0 +1,54 @@
+Datasets:
+- Proj2Dataset
+- Test
+Experiments:
+- Figs for spectra
+bands:
+  alpha:
+  - 8
+  - 12
+  beta:
+  - 15
+  - 30
+methods:
+- Correlation
+---
+Proj2Dataset:
+  Channels_file: Channels.dat
+  Dataset participants:
+  - /home/dmitrii/Desktop/Neuroscience/Project#2/Proj2Dataset/Participant 3
+  - /home/dmitrii/Desktop/Neuroscience/Project#2/Proj2Dataset/Participant 2
+  - /home/dmitrii/Desktop/Neuroscience/Project#2/Proj2Dataset/Participant 1
+  - /home/dmitrii/Desktop/Neuroscience/Project#2/Proj2Dataset/Participant 5
+  - /home/dmitrii/Desktop/Neuroscience/Project#2/Proj2Dataset/Participant 4
+  Dataset path: /home/dmitrii/Desktop/Neuroscience/Project#2/Proj2Dataset
+  Experiments:
+    Background:
+      Description: EEG activity recording when the subject was in a relaxed state
+        with open eyes and closed eyes. 1 - open, 2 -closed.
+      Duration: 60
+      sampling rate: 250
+    Cubes for spectra:
+      Description: the cubes with 0.6/0.4 edges intensities with white background.
+      Duration: 60
+      Intencity interval:
+      - 0.1
+      - 1
+      Intencity step: 0.1
+      sampling rate: 250
+    Figs for spectra:
+      Description: Response to the color images with different brightness.
+      Duration: 60
+      Intencity interval:
+      - 0.1
+      - 1
+      Intencity step: 0.1
+      sampling rate: 250
+  Preprocessed: true
+Test:
+  Experiments:
+    Background 1:
+      Description: EEG activity recording when the subject was in a relaxed state
+        with open eyes.
+      Duration: 60
+      sampling rate: 250
